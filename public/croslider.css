@@ -1,0 +1,77 @@
+body {
+	min-height: 100vh;
+	background-color: lightslategrey;
+}
+
+.croslider .stage {
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	height: 150px;
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+.croslider ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: transform 600ms ease;
+	transform: translateX(0);
+}
+
+.croslider ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.croslider .stage > ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 300px;
+	height: 150px;
+}
+
+.stage img {
+	transform: rotate(0.1deg);
+}
+
+nav.direction ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+}
+
+nav.direction ul:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+nav.direction li {
+	width: 30px;
+	height: 150px;
+	cursor: pointer;
+}
+
+nav.direction .prev {
+	float: left;
+}
+
+nav.direction .next {
+	float: right;
+}
+
+nav.direction .fa:before {
+	display: table-cell;
+	width: 30px;
+	height: 150px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: rgba(255,255,255,0.25);
+	color: #fff;
+}
