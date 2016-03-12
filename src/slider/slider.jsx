@@ -1,5 +1,6 @@
 import React from 'react';
 import Slide from './slide';
+import './style.less';
 
 export var Slider = React.createClass({
     getInitialState() {
