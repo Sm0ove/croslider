@@ -3,3 +3,5 @@ npm-debug.log
 .idea/
 stats.json
 .vscode/
+server/
+docs/
