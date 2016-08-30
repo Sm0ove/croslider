@@ -26,7 +26,7 @@ module.exports = {
     './src/browser.js',
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'docs'),
     filename: '[chunkhash].js',
   },
   resolve: {
