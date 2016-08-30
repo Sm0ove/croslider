@@ -9,7 +9,7 @@
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "build-lib": "babel src --out-dir lib --plugins remove-nonjs",
     "build": "npm run build-demo && npm run build-lib",
-    "publish": "npm run build && npm version patch && npm publish --force"
+    "deploy": "npm run build && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "Christian Rohleder",
