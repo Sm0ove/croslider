@@ -1,6 +1,6 @@
 {
   "name": "croslider2",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Experience the tremendously amazing croslider.npm",
   "main": "./lib",
   "scripts": {
