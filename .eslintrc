@@ -1,0 +1,17 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "experimentalDecorators": true,
+    "sourceType": "module",
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
+    }
+}
