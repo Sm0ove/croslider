@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
-import Slider from 'croslider';
-import 'croslider/src/slider/slider.less';
+import Slider from '../src';
 import Data from './data';
 
 class App extends Component {

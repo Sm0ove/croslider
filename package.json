@@ -1,13 +1,16 @@
 {
-  "name": "croslider",
-  "version": "1.0.2",
+  "name": "croslider2",
+  "version": "1.0.3",
   "description": "Experience the tremendously amazing croslider.npm",
   "main": "./lib",
   "scripts": {
-    "demo": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "build-demo": "webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "build": "babel src --out-dir lib --plugins remove-nonjs"
+    "build-lib": "babel src --out-dir lib --plugins remove-nonjs",
+    "build": "npm run build-demo && npm run build-lib",
+    "prepublish": "npm run build",
+    "publish": "npm version patch && npm publish --force"
   },
   "keywords": [],
   "author": "Christian Rohleder",
