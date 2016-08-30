@@ -23,7 +23,7 @@ loaders.push({
 
 module.exports = {
   entry: [
-    './src/browser.js',
+    './demo/browser.js',
   ],
   output: {
     path: path.join(__dirname, 'docs'),
@@ -57,7 +57,7 @@ module.exports = {
       allChunks: true,
     }),
     new HtmlWebpackPlugin({
-      template: './server/template.html',
+      template: './demo/template.html',
       title: 'Webpack App',
     }),
   ],

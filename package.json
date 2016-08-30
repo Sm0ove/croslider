@@ -2,12 +2,12 @@
   "name": "croslider",
   "version": "1.0.2",
   "description": "Experience the tremendously amazing croslider.npm",
-  "main": "./lib/slider",
+  "main": "./lib",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "demo": "webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "compile": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib --plugins remove-nonjs"
   },
   "keywords": [],
   "author": "Christian Rohleder",

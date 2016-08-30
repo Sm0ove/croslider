@@ -37,7 +37,7 @@ module.exports = {
 	entry: [
 		`webpack-dev-server/client?http://${HOST}:${PORT}`,
 		`webpack/hot/only-dev-server`,
-		`./src/browser.js` // Your appʼs entry point
+		`./demo/browser.js` // Your appʼs entry point
 	],
 	devtool: process.env.WEBPACK_DEVTOOL || 'eval',
 	output: {
@@ -67,7 +67,7 @@ module.exports = {
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-			template: './server/template.html'
+			template: './demo/template.html'
 		})
 	]
 };
